@@ -138,7 +138,7 @@ app.get("/profile/:first/:last", (req, res) => {
   });
 });
 
-// Route param middleware example: /users/42
+// Param middleware for :userId
 app.param("userId", (req, res, next, userId) => {
   const userIdNum = Number(userId);
 
